@@ -1,17 +1,9 @@
 # Starrocks Official MCP server
 
+The StarRocks MCP Server acts as a bridge between AI assistants and StarRocks databases, allowing for direct SQL execution and database exploration without requiring complex setup or configuration.
 
-## Components
 
-### Tools
-
-* `read_query`
-  - Execute a SELECT query or commands that return a ResultSet
-
-* `write_query`
-  - Execute an DDL/DML or other StarRocks command that do not have a ResultSet
-
-### Configuration
+## Configuration
 
 MCP server config
 
@@ -61,6 +53,15 @@ If mcp-server-starrocks is not installed as python package(in dev env), can run 
 }
 ```
 
+## Components
+
+### Tools
+
+* `read_query`
+  - Execute a SELECT query or commands that return a ResultSet
+
+* `write_query`
+  - Execute an DDL/DML or other StarRocks command that do not have a ResultSet
 
 ### Resources
 
