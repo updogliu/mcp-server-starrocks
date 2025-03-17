@@ -65,7 +65,7 @@ Run as docker container
         "-e",
         "STARROCKS_HOST=<add this ...>",
         "-e",
-        "STARROCKS_PORT=<add this ...>,
+        "STARROCKS_PORT=<add this ...>",
         "-e",
         "STARROCKS_USER=<add this ...>",
         "-e",
