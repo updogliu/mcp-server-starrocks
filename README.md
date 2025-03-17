@@ -29,7 +29,7 @@ MCP server config
 }
 ```
 
-If mcp-server-starrocks is not installed as python package(in dev env), can run using local dir 
+If mcp-server-starrocks is not installed as python package(in dev env), can run using local dir
 
 ```json
 {
@@ -52,6 +52,32 @@ If mcp-server-starrocks is not installed as python package(in dev env), can run 
   }
 }
 ```
+
+Run as docker container
+
+```json
+{
+  "mcpServers": {
+    "starrocks": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-e",
+        "STARROCKS_HOST=<add this ...>",
+        "-e",
+        "STARROCKS_PORT=<add this ...>,
+        "-e",
+        "STARROCKS_USER=<add this ...>",
+        "-e",
+        "STARROCKS_PASSWORD=<add this ...>",
+        "-i",
+        "--rm",
+        "updogliu/mcp-server-starrocks"]
+    }
+  }
+}
+```
+
 
 ## Components
 

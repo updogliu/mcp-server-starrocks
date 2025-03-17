@@ -22,4 +22,4 @@ build-backend = "hatchling.build"
 mcp-server-starrocks = "mcp_server_starrocks:main"
 
 [project.urls]
-Home = "https://github.com/starrocks/mcp-server-starrocks"
+Home = "https://github.com/updogliu/mcp-server-starrocks"
